@@ -15,6 +15,29 @@ npm i
 
 Or jump out to the [compiled components on bit](https://bit.dev/brenmurrell/asterisk-library/)
 
+## Contributing
+The project is definitely open to suggestions, so feel free to create an issue or submit some code. The following versioning system will be used when new components, features and bug fixes are merged.
+
+Once code has been completed, run the following commands on `main`:
+
+``` sh
+bit add src/components/*
+```
+This adds the new components to the bit repo
+
+``` sh
+bit tag --all 0.0.1
+```
+Creates a repo tag. The version number should be the next logical version number after current, following [semver](https://semver.org/) principles.
+
+To summarise how _we_ use it: 
+
+`0.0.0` == `major.minor.patch`
+
+- Major is a breaking change that would affect existing installs of Asterisk Lib in a negative way (i.e. some components in projects are likely to require significant rework to continue working)
+- Minor version should be incremented when new components are added
+- Patch version should be incremented when making bug-fixing (but non-breaking) changes to existing components, e.g. adding new props.
+
 ## Installing components in your own projects
 As simple as a yarn install! The following installs the _whole_ library. You can also install individual components. 
 

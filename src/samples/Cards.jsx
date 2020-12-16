@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import { Card, Button, Container } from '../components/All'
-import cn from 'classnames'
 
 const CardsSample = () => {
   const [columnCount, setColumnCount] = useState(3)
